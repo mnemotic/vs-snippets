@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>#nowarn</Title>
+      <Author>Martin Green</Author>
+      <Description>Code snippet for #nowarn</Description>
+      <Shortcut>#nowarn</Shortcut>
+      <SnippetTypes>
+        <SnippetType>SurroundsWith</SnippetType>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>warnings</ID>
+          <ToolTip>Warnings to suppress.</ToolTip>
+          <Default>warnings</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[#pragma warning disable $warnings$
+    $selected$
+#pragma warning restore $warnings$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
